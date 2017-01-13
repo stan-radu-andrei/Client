@@ -21,7 +21,7 @@ void Socket::Connect()
     log info=Login();
     socket = new QTcpSocket(this);
     //QHostAddress::QHostAddress("192.168.1.155");
-    socket->connectToHost(info.IP,1234);
+    socket->connectToHost(/*info.IP*/"192.168.1.154",1234);
     //connect
     while(socket->waitForConnected(1500))
     {
